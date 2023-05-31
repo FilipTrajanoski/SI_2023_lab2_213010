@@ -19,7 +19,7 @@ public class SILab2Test {
         assertTrue(ex.getMessage().contains("Mandatory information missing!"));
 
         assertFalse(SILab2.function(new User(null,"0123","randommail"),allUsers));
-        assertFalse(SILab2.function(new User(null,"01 23","randommail"),allUsers));
+        assertFalse(SILab2.function(new User(null,"password01 23","randommail"),allUsers));
         assertFalse(SILab2.function(new User(null,"password0123","randommail"),allUsers));
     }
 
